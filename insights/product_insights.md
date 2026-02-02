@@ -6,3 +6,14 @@
 - No major NULL issues in critical fields
 - Session structure is reliable for funnel and retention analysis
 
+
+## Day 2 – Funnel Analysis
+
+- Built a user-level funnel using 42M+ event records  
+- Calculated unique users who viewed, added to cart, and purchased  
+- Derived conversion rates:
+- View → Cart
+- Cart → Purchase
+- View → Purchase  
+- Established baseline metrics for further optimization
+
