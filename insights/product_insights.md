@@ -17,3 +17,11 @@
 - View → Purchase  
 - Established baseline metrics for further optimization
 
+## Day 3 – Conversion Rate Trends
+
+- Calculated daily views, carts, and purchases
+- Tracked conversion rates over time
+- Enabled identification of high and low performing days
+- Established trend analysis for business performance monitoring
+
+
