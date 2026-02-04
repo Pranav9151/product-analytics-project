@@ -25,3 +25,13 @@
 - Established trend analysis for business performance monitoring
 
 
+## Day 4 – Session Behavior Analysis
+
+- Analyzed user sessions to understand engagement patterns  
+- Calculated session duration and event counts  
+- Measured average events per session  
+- Identified proportion of sessions leading to purchases  
+- Built foundation for retention and cohort analysis
+
+
+
