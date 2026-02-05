@@ -7,8 +7,8 @@ WITH user_first_activity AS (
     FROM events_raw
     GROUP BY user_id
 )
-
-SELECT * FROM user_first_activity
+SELECT *
+FROM user_first_activity
 LIMIT 100;
 
 
