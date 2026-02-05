@@ -34,4 +34,11 @@
 - Built foundation for retention and cohort analysis
 
 
+## Day 5 – Retention Analysis
+
+- Identified first activity date for every user  
+- Measured returning users over time  
+- Calculated Day-1 and Day-7 retention rates  
+- Provided insights into user stickiness and engagement  
+- Established core metric for long-term product success
 
