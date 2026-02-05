@@ -75,6 +75,38 @@ LEFT JOIN next_day_activity n
     ON f.user_id = n.user_id
     AND n.activity_date = f.first_date + INTERVAL '1 day';
 
+------------------------------DAY-7 Retention---------------------------------------
+
+WITH user_first_activity AS (
+    SELECT
+        user_id,
+        MIN(DATE(event_time)) AS first_date
+    FROM events_raw
+    GROUP BY user_id
+),
+
+later_activity AS (
+    SELECT
+        user_id,
+        DATE(event_time) AS activity_date
+    FROM events_raw
+    GROUP BY user_id, DATE(event_time)
+)
+
+SELECT
+    COUNT(DISTINCT f.user_id) AS total_new_users,
+
+    COUNT(DISTINCT l.user_id) AS day7_return_users,
+
+    ROUND(
+        COUNT(DISTINCT l.user_id)::NUMERIC /
+        COUNT(DISTINCT f.user_id) * 100, 2
+    ) AS day7_retention_pct
+
+FROM user_first_activity f
+LEFT JOIN later_activity l
+    ON f.user_id = l.user_id
+    AND l.activity_date = f.first_date + INTERVAL '7 day';
 
 
 
