@@ -42,3 +42,11 @@
 - Provided insights into user stickiness and engagement  
 - Established core metric for long-term product success
 
+## Day 6 – Cohort Analysis
+
+- Grouped users based on their first activity month  
+- Tracked user activity across subsequent months  
+- Measured retention patterns by cohort  
+- Enabled long-term engagement analysis  
+- Identified how different user groups behave over time
+
