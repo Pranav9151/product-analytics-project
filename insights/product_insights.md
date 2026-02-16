@@ -50,3 +50,10 @@
 - Enabled long-term engagement analysis  
 - Identified how different user groups behave over time
 
+## Day 7 – Revenue & LTV Analysis
+
+- Calculated total and daily revenue  
+- Measured paying user contribution  
+- Derived ARPU (Average Revenue Per User)  
+- Estimated basic Customer Lifetime Value (LTV)  
+- Established revenue health metrics for the business
