@@ -3,15 +3,10 @@
 WITH user_metrics AS (
     SELECT
         user_id,
-
         COUNT(*) AS total_events,
-
         COUNT(DISTINCT user_session) AS total_sessions,
-
         SUM(CASE WHEN event_type = 'purchase' THEN price ELSE 0 END) AS total_revenue,
-
         SUM(CASE WHEN event_type = 'purchase' THEN 1 ELSE 0 END) AS total_purchases
-
     FROM events_raw
     GROUP BY user_id
 )
@@ -41,6 +36,50 @@ WHERE total_revenue > (
     FROM user_metrics
 )
 ORDER BY total_revenue DESC;
+
+
+-- STEP 3 – High Engagement Users (Activity Based) -----------------------------
+
+WITH user_activity AS (
+    SELECT
+        user_id,
+        COUNT(*) AS total_events
+    FROM events_raw
+    GROUP BY user_id
+)
+
+SELECT
+    user_id,
+    total_events
+FROM user_activity
+ORDER BY total_events DESC
+LIMIT 100;
+
+
+-- STEP 4 – Power User Summary Metrics -----------------------------
+
+WITH user_metrics AS (
+    SELECT
+        user_id,
+        SUM(CASE WHEN event_type = 'purchase' THEN price ELSE 0 END) AS total_revenue
+    FROM events_raw
+    GROUP BY user_id
+),
+
+threshold AS (
+    SELECT
+        PERCENTILE_CONT(0.90) 
+        WITHIN GROUP (ORDER BY total_revenue) AS revenue_cutoff
+    FROM user_metrics
+)
+
+SELECT
+    COUNT(*) AS power_user_count,
+    SUM(total_revenue) AS power_user_revenue
+FROM user_metrics, threshold
+WHERE total_revenue > revenue_cutoff;
+
+
 
 
 
