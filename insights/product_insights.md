@@ -57,3 +57,11 @@
 - Derived ARPU (Average Revenue Per User)  
 - Estimated basic Customer Lifetime Value (LTV)  
 - Established revenue health metrics for the business
+
+## Day 8 – Power User Analysis
+
+- Identified high-revenue users (top 10%)  
+- Measured revenue concentration among power users  
+- Analyzed high-engagement users based on activity  
+- Observed Pareto distribution in revenue contribution  
+- Provided foundation for targeted retention strategy
