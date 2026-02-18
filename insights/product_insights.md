@@ -65,3 +65,4 @@
 - Analyzed high-engagement users based on activity  
 - Observed Pareto distribution in revenue contribution  
 - Provided foundation for targeted retention strategy
+
