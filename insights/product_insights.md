@@ -66,3 +66,11 @@
 - Observed Pareto distribution in revenue contribution  
 - Provided foundation for targeted retention strategy
 
+## Day 9 – Growth Metrics
+
+- Calculated Daily Active Users (DAU)  
+- Calculated Monthly Active Users (MAU)  
+- Derived stickiness metric (DAU / MAU)  
+- Evaluated engagement consistency over time  
+- Established core growth health indicators
+
