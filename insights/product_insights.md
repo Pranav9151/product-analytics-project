@@ -74,3 +74,10 @@
 - Evaluated engagement consistency over time  
 - Established core growth health indicators
 
+## Day 10 – Feature / Category Adoption
+
+- Analyzed product category engagement  
+- Identified top revenue-generating categories  
+- Measured category-level conversion rates  
+- Evaluated brand-level revenue contribution  
+- Highlighted high-performing and underperforming segments
