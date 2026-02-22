@@ -81,3 +81,11 @@
 - Measured category-level conversion rates  
 - Evaluated brand-level revenue contribution  
 - Highlighted high-performing and underperforming segments
+
+## Day 12 – Analytics Layer Creation
+
+- Built aggregated daily metrics table  
+- Reduced dependency on scanning 42M raw rows  
+- Improved performance for reporting queries  
+- Applied indexing for optimized access  
+- Shifted from analysis to analytics engineering mindset
