@@ -2,6 +2,10 @@
 
 -- DAY 12: Create Aggregated Daily Metrics Table
 
+-- DAY 12: Recreate Aggregated Daily Metrics Table
+
+DROP TABLE IF EXISTS daily_metrics;
+
 CREATE TABLE daily_metrics AS
 
 SELECT
@@ -23,4 +27,19 @@ SELECT
 
 FROM events_raw
 GROUP BY DATE(event_time);
+
+-- 2 – Add Primary Index------------------------
+
+    CREATE INDEX idx_daily_metrics_date
+ON daily_metrics(metric_date);
+
+-- 3 – Query from Aggregated Table------------------------
+
+SELECT
+    metric_date,
+    total_users,
+    total_revenue,
+    total_purchases
+FROM daily_metrics
+ORDER BY metric_date;
 
