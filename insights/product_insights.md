@@ -89,3 +89,4 @@
 - Improved performance for reporting queries  
 - Applied indexing for optimized access  
 - Shifted from analysis to analytics engineering mindset
+
