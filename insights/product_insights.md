@@ -90,3 +90,10 @@
 - Applied indexing for optimized access  
 - Shifted from analysis to analytics engineering mindset
 
+## Day 13 – Star Schema Data Modeling
+
+- Designed dimensional data model  
+- Created fact table for event tracking  
+- Built date, user, product, and session dimensions  
+- Implemented indexing for optimized joins  
+- Transitioned project toward data warehouse architecture
