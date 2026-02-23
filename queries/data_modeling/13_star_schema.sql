@@ -47,4 +47,25 @@ FROM events_raw;
 CREATE INDEX idx_dim_session_id
 ON dim_session(user_session);
 
+-- STEP 5 – Create Fact Table---------------------------------
+
+CREATE TABLE fact_events AS
+SELECT
+    user_id,
+    user_session,
+    product_id,
+    DATE(event_time) AS event_date,
+    event_type,
+    price
+FROM events_raw;
+
+CREATE INDEX idx_fact_user
+ON fact_events(user_id);
+
+CREATE INDEX idx_fact_date
+ON fact_events(event_date);
+
+CREATE INDEX idx_fact_product
+ON fact_events(product_id);
+
 
