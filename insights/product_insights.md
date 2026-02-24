@@ -97,3 +97,12 @@
 - Built date, user, product, and session dimensions  
 - Implemented indexing for optimized joins  
 - Transitioned project toward data warehouse architecture
+
+## Day 14 – Performance Optimization
+
+- Learned to use EXPLAIN ANALYZE
+- Understood Seq Scan vs Index Scan
+- Implemented single-column and composite indexes
+- Optimized COUNT queries
+- Built pre-aggregated summary tables
+
