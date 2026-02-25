@@ -106,3 +106,11 @@
 - Optimized COUNT queries
 - Built pre-aggregated summary tables
 
+## Day 15 – Table Partitioning
+
+- Converted fact table into range-partitioned structure
+- Implemented yearly partitions
+- Enabled partition pruning
+- Improved large-scale query efficiency
+- Learned production-grade PostgreSQL scaling technique
+
