@@ -114,3 +114,9 @@
 - Improved large-scale query efficiency
 - Learned production-grade PostgreSQL scaling technique
 
+## Day 16 – Materialized Views
+
+- Built daily product-level aggregated metrics
+- Pre-computed views, carts, purchases, and revenue
+- Indexed materialized view for BI-ready querying
+- Enabled fast analytics on 42M+ events dataset
